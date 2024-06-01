@@ -1,7 +1,7 @@
 const Authenticator = require("./Authenticator");
 
-const authenticator1 = new Authenticator();
-const authenticator2 = new Authenticator();
+let authenticator1 = new Authenticator();
+let authenticator2 = new Authenticator();
 
 console.log(authenticator1 === authenticator2);
 

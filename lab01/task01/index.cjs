@@ -4,15 +4,15 @@ const Warehouse = require('./Warehouse.cjs');
 const Reporting = require('./Reporting.cjs');
 const Euro = require('./Euro.cjs');
 
-const price = new Money(10, 50); // $10.50
-const laptop = new Product("Laptop", price);
+let price = new Money(10, 50); // $10.50
+let laptop = new Product("Laptop", price);
 
-const warehouseItem = new Warehouse("Laptop", "piece", 1000, 10, "2024-06-01");
+let warehouseItem = new Warehouse("Laptop", "piece", 1000, 10, "2024-06-01");
 
-const euroPrice = new Euro(10, 50);
-const euroLaptop = new Product("Euro Laptop", euroPrice);
+let euroPrice = new Euro(10, 50);
+let euroLaptop = new Product("Euro Laptop", euroPrice);
 
-const reporting = new Reporting();
+let reporting = new Reporting();
 reporting.addWarehouseItem(warehouseItem);
 
 reporting.registerArrival("Laptop", 5);

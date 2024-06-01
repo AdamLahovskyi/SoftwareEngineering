@@ -8,7 +8,7 @@ class Reporting {
     }
 
     registerArrival(itemName, quantity) {
-        const item = this.warehouseItems.find(i => i.name === itemName);
+        let item = this.warehouseItems.find(i => i.name === itemName);
         if (item) {
             item.changeQuantity(quantity);
             item.lastDeliveryDate = new Date();
@@ -19,7 +19,7 @@ class Reporting {
     }
 
     registerShipment(itemName, quantity) {
-        const item = this.warehouseItems.find(i => i.name === itemName);
+        let item = this.warehouseItems.find(i => i.name === itemName);
         if (item) {
             if (item.quantity >= quantity) {
                 item.changeQuantity(-quantity);

@@ -2,9 +2,9 @@ const iproneFactory = new IProneFactory();
 const kiaomiFactory = new KiaomiFactory();
 const balaxyFactory = new BalaxyFactory();
 
-const iproneLaptop = iproneFactory.createDevice('Laptop');
-const kiaomiSmartphone = kiaomiFactory.createDevice('Smartphone');
-const balaxyEBook = balaxyFactory.createDevice('EBook');
+let iproneLaptop = iproneFactory.createDevice('Laptop');
+let kiaomiSmartphone = kiaomiFactory.createDevice('Smartphone');
+let balaxyEBook = balaxyFactory.createDevice('EBook');
 
 console.log(iproneLaptop);
 console.log(kiaomiSmartphone);

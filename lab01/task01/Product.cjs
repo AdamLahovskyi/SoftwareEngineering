@@ -10,7 +10,7 @@ class Product {
         if (amount > (this.price.dollars * 100 + this.price.cents)) {
             console.log(`Cannot reduce price by ${amount}`);
         } else {
-            const newPriceInCents = (this.price.dollars * 100 + this.price.cents) - amount;
+            let newPriceInCents = (this.price.dollars * 100 + this.price.cents) - amount;
             this.price.setDollars(Math.floor(newPriceInCents / 100));
             this.price.setCents(newPriceInCents % 100);
         }
