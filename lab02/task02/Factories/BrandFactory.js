@@ -1,0 +1,3 @@
+class BrandFactory {
+    createDevice(model) {}
+}
